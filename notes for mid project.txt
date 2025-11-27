@@ -1,0 +1,76 @@
+** change data type of:
+1.Data
+2. Convert categorical columns to category >>Location
+WindGustDir
+WindDir9am
+WindDir3pm
+RainToday
+RainTomorrow
+
+** check missing values
+1. dropping columns with lessthan 5% missing values >> MinTemp 
+ MaxTemp
+Rainfall
+WindDir3pm
+WindSpeed9am
+WindSpeed3pm 
+Humidity9am
+Humidity3pm
+Temp9am
+Temp3pm
+RainToday
+RainTomorrow  
+2. drop columns with more than 40% missing values
+Evaporation
+Sunshine
+
+** fill numerical columns > 5% & < 40
+Cloud9am
+Cloud3pm
+Pressure3pm
+Pressure9am
+WindGustSpeed
+
+** fill categorical columns
+WindGustDir
+WindDir9am
+
+
+******* Univariate Analysis *****
+Strong Predictors (you will see clear separation):
+
+Humidity3pm → much higher when RainTomorrow=1
+
+Pressure3pm → lower on rainy days
+
+Cloud3pm
+
+Cloud9am
+
+RainToday
+
+
+
+Medium Predictors:
+
+Temp3pm
+
+Humidity9am
+
+Pressure9am
+
+WindGustSpeed
+
+
+
+Weak Predictors:
+
+MinTemp
+
+MaxTemp
+
+WindSpeed9am
+
+WindSpeed3pm
+
+
